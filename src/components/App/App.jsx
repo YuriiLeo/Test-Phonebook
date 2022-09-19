@@ -37,13 +37,19 @@ export default class App extends Component {
 
     removeContact = ( id) => {
         // evt.preventDefault();
+        console.log(this.filter);
         this.setState((prev ) => {
             const newContacts = prev.contacts.filter((item) => item.id !== id);
             return {
                 contacts: newContacts
             }
-      })
+        })
+     this.setState({
+          filter: '',
+     })
+        console.log(this.filter);
     }
+
     handleChange = (evt) => {
         const { name, value } = evt.target;
         this.setState({
