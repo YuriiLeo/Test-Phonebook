@@ -24,11 +24,11 @@ export default class App extends Component {
         if (this.inDuplicate(contact)) {
              return  alert(`${contact.name}  is already in contacts.`);
         }
+           const newContact = {
+        id: nanoid(),
+        ...contact
+    }
         this.setState((prev) => {
-            const newContact = {
-                id: nanoid(),
-                ...contact
-            }
             return {
                 contacts: [...prev.contacts, newContact]
             }

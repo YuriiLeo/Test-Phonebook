@@ -1,23 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Wrapper, Item, Button } from './ContactList.styled';
-import {MdContactPhone} from 'react-icons/md'
+import { List } from './ContactList.styled';
+import ContactItem from 'components/ContactItem/ContactItem';
+
 
 export default function ContactList({ items, removeContact }) {
-    const elements = items.map(({ name, number, id }) => {
-      return <Item key={id}>
-        <MdContactPhone size={18}/>
-        <Wrapper>
-            <span>{name}: </span>
-            <span>{number}</span>
-       </Wrapper> 
-            <Button type='button' onClick={() => removeContact(id)}>Delete</Button>
-        </Item>
-    })
   return (
-      <List>{elements}</List>
-  )
-}
+    <List>
+      {
+        items.map(({ name, number, id }) => (
+          <ContactItem id={id} name={name} number={number} removeContact={removeContact} />
+        ))}
+    </List>
+  );
+};
 
 
 ContactList.propTypes = {
@@ -26,5 +22,5 @@ ContactList.propTypes = {
     name: PropTypes.string,
     number: PropTypes.string,
   })),
-    onSubmit: PropTypes.func,
+    removeContact: PropTypes.func,
 }
