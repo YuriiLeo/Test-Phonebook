@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import { Wrapper, Item, Button } from './ContactItem.styled';
 import { MdContactPhone } from 'react-icons/md';
 
-export default function ContactItem({ id, name, number, removeContact }) {
-    console.log(removeContact);
-    console.log(id);
-    
+export default function ContactItem({ id, name, number, removeContact }) {    
   return (
     <Item key={id}>
         <MdContactPhone size={18}/>

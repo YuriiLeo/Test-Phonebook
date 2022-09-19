@@ -9,7 +9,7 @@ export default function ContactList({ items, removeContact }) {
     <List>
       {
         items.map(({ name, number, id }) => (
-          <ContactItem id={id} name={name} number={number} removeContact={removeContact} />
+          <ContactItem key={id} id={id} name={name} number={number} removeContact={removeContact} />
         ))}
     </List>
   );

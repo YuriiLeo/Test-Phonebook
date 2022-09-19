@@ -5,7 +5,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import Section from "components/Section/Section";
 import { nanoid } from 'nanoid';
-import Notification from "components/Notification/Notification";
+// import Notification from "components/Notification/Notification";
 import Contacts from "components/Contacts/Contacts"; 
 
 export default class App extends Component {
@@ -85,12 +85,12 @@ export default class App extends Component {
                   <ContactForm  onSubmit={addContact}/>
             </Section>
             <Contacts>
-              {contacts.length === 0 ?
-                <Notification message="There is no contacts"></Notification> :
+              {/* {contacts.length === 0 ?
+                <Notification message="There is no contacts"></Notification> : } */}
                 <Section title="Contacts">
                   <Filter onChange={handleChange} filter={filter} />
                   <ContactList items={contacts} removeContact={removeContact} />
-                </Section>}
+                </Section>
             </Contacts>
             </Container>
   )}
