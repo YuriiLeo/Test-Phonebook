@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Item, Button } from './ContactList.styled';
+import { List, Wrapper, Item, Button } from './ContactList.styled';
+import {MdContactPhone} from 'react-icons/md'
 
 export default function ContactList({ items, removeContact }) {
     const elements = items.map(({ name, number, id }) => {
-        return <Item key={id}>
+      return <Item key={id}>
+        <MdContactPhone size={18}/>
+        <Wrapper>
             <span>{name}: </span>
             <span>{number}</span>
+       </Wrapper> 
             <Button type='button' onClick={() => removeContact(id)}>Delete</Button>
         </Item>
     })

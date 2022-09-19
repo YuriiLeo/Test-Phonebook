@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-    margin-left: 40px;
+    margin-left: 20px;
+`;
+
+export const Wrapper = styled.div`
+  margin-left: 20px;
 `;
 
 export const Item = styled.li`
