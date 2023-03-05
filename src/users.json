@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "user": "Tony",
+    "tweets": 1050,
+    "followers": 120300,
+    "avatar": "https://robohash.org/10e6edb0fad9f53f19b73e8e39fdd219?set=set3&bgset=&size=200x200"
+  },
+  {
+    "id": 2,
+    "user": "Poly",
+    "tweets": 550,
+    "followers": 100100,
+    "avatar": "https://robohash.org/c83c56b3b6362f78cdd5cac912db901c?set=set3&bgset=&size=200x200"
+  },
+  {
+    "id": 3,
+    "user": "Mango",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://robohash.org/64bfc67e25823f67e0f1d0786f429e87?set=set3&bgset=&size=200x200"
+  },
+  {
+    "id": 4,
+    "user": "Jeck",
+    "tweets": 2050,
+    "followers": 150100,
+    "avatar": "https://gravatar.com/avatar/3bca4e8aebadaf0954b3f590c9b5a717?s=200&d=robohash&r=x"
+  },
+  {
+    "id": 5,
+    "user": "Peter",
+    "tweets": 3050,
+    "followers": 170170,
+    "avatar": "https://gravatar.com/avatar/4234670d16fbc686709b659dd2b8a65b?s=200&d=robohash&r=x"
+  },
+  {
+    "id": 6,
+    "user": "Bill",
+    "tweets": 570,
+    "followers": 100300,
+    "avatar": "https://gravatar.com/avatar/cb906844676e29e88c0a91dc2ebeb809?s=200&d=robohash&r=x"
+  }
+]
