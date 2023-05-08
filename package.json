@@ -1,8 +1,8 @@
 {
-  "name": "react-hw-02-phonebook",
+  "name": "Test-Phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yuriileo.github.io/goit-react-hw-02-phonebook/",
+  "homepage": "https://yuriileo.github.io/Test-Phonebook/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
